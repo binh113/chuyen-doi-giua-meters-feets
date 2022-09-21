@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let feet = parseFloat(prompt("nhập số feet"));
+    let meters = parseFloat(prompt("nhập số meters"));
+
+    function footToMeters(feet) {
+        m = 0.305 * feet;
+        return m;
+    }
+
+    function metersToFoot(m) {
+        feet = 3.279 * m;
+        console.log(feet)
+        return feet;
+    }
+
+    document.write("chuyển đổi foot thành meters: " + footToMeters(feet)+ "<br>");
+    document.write("chuyển đổi meters thành foot: " + metersToFoot(meters));
+</script>
+</body>
+</html>
